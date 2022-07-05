@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -26,30 +26,26 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <div class="preview-card">
-        <div class="card__image">
-          <picture>
-            <source
-              media="(max-width: 1100px)"
-              srcset="images/image-product-mobile.jpg"
-            />
-            <img src="images/image-product-desktop.jpg" alt="Product preview" />
-          </picture>
-        </div>
+        <picture class="card__image">
+          <source
+            media="(max-width: 1100px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <img src="images/image-product-desktop.jpg" alt="Product preview" />
+        </picture>
 
         <div class="card__content">
           <div class="card__title">
-            <div class="preface">perfume</div>
+            <span class="preface">perfume</span>
             <h1>Gabrielle Essence Eau De Parfum</h1>
           </div>
 
-          <div class="card__body">
-            <p>
-              A floral, solar and voluptuous interpretation composed by Olivier
-              Polge, Perfumer-Creator for the House of CHANEL.
-            </p>
-          </div>
+          <p class="card__body">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
 
           <div class="card__price-display">
             $149.99 <span class="old-price">$169.99</span>
@@ -65,14 +61,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://github.com/AngryMorrocoy/">Manuel Rivas ;)</a>.
-    </div>
+    <!-- <div class="attribution"> -->
+    <!--   Challenge by -->
+    <!--   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" -->
+    <!--     >Frontend Mentor</a -->
+    <!--   >. Coded by -->
+    <!--   <a href="https://github.com/AngryMorrocoy/">Manuel Rivas ;)</a>. -->
+    <!-- </div> -->
   </body>
 </html>

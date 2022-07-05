@@ -1,21 +1,13 @@
 .preview-card {
   position: relative;
 
-  $border-radius: 1.55rem;
+  $border-radius: 0.8rem;
   $inner-margin: 2rem;
 
-  margin: 3.5rem 2rem;
-  padding-bottom: 0.5rem;
   background-color: $white;
   border-radius: $border-radius;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 75%;
-
-  & > .card__content > * {
-    margin: $inner-margin;
-  }
+  width: auto;
 
   .card__image {
     img {
@@ -23,32 +15,43 @@
     }
   }
 
+  .card__content {
+    padding: 1.8rem;
+  }
+
   .card__title {
     .preface {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.75em;
-      margin-bottom: 1rem;
-      font-weight: bold;
+      letter-spacing: 0.4rem;
     }
 
     h1 {
-      font-size: 2rem;
-      line-height: 1.05em;
+      $title-fontsize: 2.15rem;
+      $line-spacing: 0.6rem;
+      font-size: $title-fontsize;
+
+      line-height: calc(#{$title-fontsize} + #{$line-spacing});
+
+      margin-top: 1.35rem;
     }
   }
 
   .card__body {
-    line-height: 1.7em;
-    font-size: 1rem;
+    margin-top: 1.4rem;
+    font-size: 0.91rem;
+    line-height: 1.5rem;
   }
 
   .card__price-display {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
     display: flex;
     align-items: center;
 
     font-family: 'Fraunces', serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: $primary-color;
 
     .old-price {
@@ -59,7 +62,40 @@
 
       text-decoration: line-through;
 
-      margin-left: 1.5em;
+      margin-left: 1.8rem;
+    }
+  }
+
+  .add-to-cart {
+    $font-size: 0.9rem;
+
+    background-color: $primary-color;
+    color: $white;
+    width: auto;
+    padding: 1rem 1rem;
+    display: block;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: $font-size;
+
+    border-radius: 0.5rem;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-green;
+    }
+
+    .icon-cart {
+      margin-right: 0.7rem;
+      img {
+        height: $font-size;
+        width: auto;
+      }
     }
   }
 }

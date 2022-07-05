@@ -8,34 +8,3 @@
     cursor: pointer;
   }
 }
-
-.btn.add-to-cart {
-  $font-size: 1rem;
-
-  background-color: $primary-color;
-  color: $white;
-  width: auto;
-  padding: 1rem 1rem;
-  display: block;
-  width: 100%;
-
-  text-align: center;
-
-  font-weight: bold;
-  font-size: $font-size;
-
-  border-radius: 0.5rem;
-
-  &:hover,
-  &:focus {
-    background-color: $dark-green;
-  }
-
-  .icon-cart {
-    margin-right: 0.75em;
-    img {
-      height: $font-size;
-      width: auto;
-    }
-  }
-}
