@@ -1,17 +1,14 @@
 .preview-card {
-  position: relative;
-
-  $border-radius: 0.8rem;
   $inner-margin: 2rem;
 
   background-color: $white;
-  border-radius: $border-radius;
+  border-radius: $card-border-radius;
 
-  width: auto;
+  max-width: 43rem;
 
   .card__image {
     img {
-      border-radius: $border-radius $border-radius 0 0;
+      border-radius: $card-border-radius $card-border-radius 0 0;
     }
   }
 
