@@ -1,0 +1,115 @@
+.preview-card {
+  position: relative;
+  margin: 3.5rem 2rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 1.55rem;
+}
+.preview-card > * {
+  margin: 2rem;
+}
+.preview-card .card__image {
+  margin: 0;
+}
+.preview-card .card__image img {
+  border-radius: 1.55rem 1.55rem 0 0;
+}
+.preview-card .card__title .preface {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75em;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.preview-card .card__title h1 {
+  font-size: 2rem;
+  line-height: 1.05em;
+}
+.preview-card .card__body {
+  line-height: 1.7em;
+  font-size: 1rem;
+}
+
+.btn {
+  font: inherit;
+  text-decoration: none;
+  border: none;
+}
+.btn:hover, .btn:focus {
+  cursor: pointer;
+}
+
+.btn.add-to-cart {
+  background-color: #3c8067;
+  color: white;
+  width: auto;
+  padding: 1rem 1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.btn.add-to-cart .icon-cart {
+  margin-right: 0.75em;
+}
+.btn.add-to-cart .icon-cart img {
+  height: 1rem;
+  width: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2ebe3;
+  font-size: 16px;
+  color: #6c7289;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+}
+
+h3 {
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+}
+
+h4 {
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+}
+
+h5 {
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+}
+
+h6 {
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+}
+
+/*# sourceMappingURL=styles.css.map */

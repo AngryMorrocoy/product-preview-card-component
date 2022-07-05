@@ -1,0 +1,34 @@
+@use "globals" as *;
+@import "preview-card";
+@import "buttons";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $bg-color;
+  font-size: 16px;
+  color: $light-color;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+
+@each $index in (1, 2, 3, 4, 5, 6) {
+  h#{$index} {
+    font-family: 'Fraunces', serif;
+    color: $dark-color;
+  }
+}

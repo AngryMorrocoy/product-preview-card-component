@@ -1,0 +1,42 @@
+.preview-card {
+  position: relative;
+
+  $border-radius: 1.55rem;
+  $inner-margin: 2rem;
+
+  margin: 3.5rem 2rem;
+  padding-bottom: 0.5rem;
+  background-color: $white;
+  border-radius: $border-radius;
+
+  & > * {
+    margin: $inner-margin;
+  }
+
+  .card__image {
+    margin: 0;
+    img {
+      border-radius: $border-radius $border-radius 0 0;
+    }
+  }
+
+  .card__title {
+    .preface {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.75em;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.05em;
+    }
+  }
+
+  .card__body {
+    line-height: 1.7em;
+    font-size: 1rem;
+  }
+}
