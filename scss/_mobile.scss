@@ -1,0 +1,31 @@
+$mobile-breakpoint: 1100px;
+
+@media screen and (min-width: $mobile-breakpoint) {
+  html {
+    font-size: 16px;
+  }
+
+  $border-radius: 1.55rem;
+
+  .preview-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+
+    .card__content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card__image {
+      height: 100%;
+      img {
+        border-radius: $border-radius 0 0 $border-radius;
+        // height: min-content;
+        // width: auto;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

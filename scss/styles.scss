@@ -1,6 +1,7 @@
 @use "globals" as *;
 @import "preview-card";
 @import "buttons";
+@import "mobile";
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -23,6 +24,9 @@ img {
 .container {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

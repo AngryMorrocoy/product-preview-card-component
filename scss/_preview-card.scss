@@ -9,12 +9,15 @@
   background-color: $white;
   border-radius: $border-radius;
 
-  & > * {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 75%;
+
+  & > .card__content > * {
     margin: $inner-margin;
   }
 
   .card__image {
-    margin: 0;
     img {
       border-radius: $border-radius $border-radius 0 0;
     }
