@@ -24,11 +24,15 @@
   font-weight: bold;
   font-size: $font-size;
 
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+  }
 
   .icon-cart {
-    margin-right: .75em;
+    margin-right: 0.75em;
     img {
       height: $font-size;
       width: auto;

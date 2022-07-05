@@ -29,6 +29,21 @@
   line-height: 1.7em;
   font-size: 1rem;
 }
+.preview-card .card__price-display {
+  display: flex;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  font-size: 2.2rem;
+  color: #3c8067;
+}
+.preview-card .card__price-display .old-price {
+  color: #6c7289;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-left: 1.5em;
+}
 
 .btn {
   font: inherit;
@@ -51,6 +66,9 @@
   font-size: 1rem;
   border-radius: 0.5rem;
 }
+.btn.add-to-cart:hover, .btn.add-to-cart:focus {
+  background-color: #1b4132;
+}
 .btn.add-to-cart .icon-cart {
   margin-right: 0.75em;
 }
@@ -62,7 +80,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f2ebe3;
-  font-size: 16px;
+  font-size: 14px;
   color: #6c7289;
 }
 
